@@ -1,5 +1,5 @@
-`include "../ALU_decoder.v"
-`include "../main_decoder.v"
+`include "ALU_decoder.v"
+`include "main_decoder.v"
 
 module Control_Unit_Top(Op, RegWrite, ImmSrc, ALUSrc, MemWrite, ResultSrc, Branch, funct3, funct7, ALUControl);
 

@@ -1,5 +1,5 @@
 module reg_files (
-    A1,A2,A3,WD3,clk,rst,RD1,RD2
+    A1,A2,A3,WD3,WE3,clk,rst,RD1,RD2,inn
 );
     
 input clk,rst;
