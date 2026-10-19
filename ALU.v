@@ -1,3 +1,6 @@
+`ifndef ALU_V
+`define ALU_V
+
 module ALU (
     A,B,ALUcontrol,result,Z,N,V,C
 );
@@ -50,10 +53,10 @@ assign result = mux_2;
 //assigning flags Z,N,V,C
 
 assign Z =  &(~result);
-assign N = result[31];;
+assign N = result[31];
 assign V= Cout & (ALUcontrol[1] );
 assign C = ~(ALUcontrol[1]) &  (A[31]^ sum[31]) & (~(ALUcontrol[0] ^ A[31] ^ B[31]) );
 
-
-
 endmodule
+
+`endif

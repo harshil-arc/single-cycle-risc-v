@@ -1,3 +1,6 @@
+`ifndef CONTROL_UNIT_TOP_V
+`define CONTROL_UNIT_TOP_V
+
 `include "ALU_decoder.v"
 `include "main_decoder.v"
 
@@ -15,6 +18,7 @@ module Control_Unit_Top(Op, RegWrite, ImmSrc, ALUSrc, MemWrite, ResultSrc, Branc
                 .Op(Op),
                 .RegWrite(RegWrite),
                 .ImmSrc(ImmSrc),
+                .ALUSrc(ALUSrc),
                 .MemWrite(MemWrite),
                 .ResultSrc(ResultSrc),
                 .Branch(Branch),
@@ -30,3 +34,5 @@ module Control_Unit_Top(Op, RegWrite, ImmSrc, ALUSrc, MemWrite, ResultSrc, Branc
     );
 
 endmodule
+
+`endif

@@ -7,7 +7,7 @@ single_cycle_top single_cycle_top (
 );
 
 initial begin
-    $dumpfile("single cycle.vcd");
+    $dumpfile("single_cycle.vcd");
     $dumpvars(0);
 
 end

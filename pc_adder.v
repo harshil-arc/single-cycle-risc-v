@@ -1,3 +1,6 @@
+`ifndef PC_ADDER_V
+`define PC_ADDER_V
+
 module pc_adder (
     a,b,c
 );
@@ -7,3 +10,5 @@ output [31:0] c;
 assign c = a + b;
     
 endmodule
+
+`endif
